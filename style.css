@@ -1,0 +1,75 @@
+body
+{
+    background-image: url("mmm.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    font: 16em/1 Arial;
+}
+    
+.text--line 
+{
+    font-size: .5em;
+}
+    
+svg
+{
+    position: absolute;
+    width: auto;
+    height: 250px;
+    padding:2px;
+    border-radius: 20px;    
+}
+    
+.text-copy
+{
+    fill: none;
+    stroke: #FF9999;
+    stroke-dasharray: 7% 28%;
+    stroke-width: 3px;
+    animation: stroke-offset 4s infinite linear;
+}
+.text-copy:nth-child(1)
+{
+    stroke: #FFFF33;
+    stroke-dashoffset: 7%;
+}
+
+.text-copy:nth-child(2)
+{
+    stroke:pink;
+    stroke-dashoffset: 14%;
+}
+
+.text-copy:nth-child(3)
+{
+    stroke: red;
+    stroke-dashoffset: 21%;
+}
+
+.text-copy:nth-child(4)
+{
+    stroke: midnightblue;
+    stroke-dashoffset: 28%;
+}
+
+.text-copy:nth-child(5)
+{
+    stroke: bisque;
+    stroke-dashoffset: 35%;
+}
+
+@keyframes stroke-offset
+{
+    50%
+    {
+stroke-dashoffset: 35%;
+stroke-dasharray: 0 87.5%;
+    }
+}
+
+p
+{
+    padding-top:220px;
+    padding-left: 200px;
+}
